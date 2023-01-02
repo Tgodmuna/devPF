@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<title>Welcome to My PortFolio </title>
 	<meta charset="utf-8" />
@@ -18,6 +19,7 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+
 </head>
 
 <body class="is-preload">
@@ -76,7 +78,7 @@
 							the company's goals
 							and as well as elevating it market values.
 							I am so insightful , devoted , knowledgeable and a meticulous guy.</p>
-							<p></p>
+						<p></p>
 						<ul class="actions">
 							<li><a href="About_me.html" class="button">Work Experience</a></li>
 
@@ -101,16 +103,19 @@
 						</Ul>
 						<ul class="list">
 							<h2>My Services</h2>
-							<li>Web development(front-end) </li>
+							<li>Web & App development(front-end) </li>
 							<li>UI designs with React.js</li>
+							<li>IT consulting</li>
+							<li>Information managements</li>
+
 						</ul>
-						 <ul class="list">
+						<ul class="list">
 							<h2>Basic info</h2>
-							<li>Languages:Igbo (proficiently speaking) , English(proficiently speaking)  </li>
+							<li>Languages:Igbo (proficiently speaking) , English(proficiently speaking) </li>
 							<li>Education:BSc(computer science) </li>
 							<li>WorkExperience:3yrs</li>
-						 </ul>
-						
+						</ul>
+
 					</div>
 				</div>
 			</section>
@@ -164,19 +169,19 @@
 				<p>You can reach me out in one of the following channels below or you can drop me a direct Message </p>
 				<div class="split style1">
 					<section>
-						<form method="POST" data-netlify="true">
+						<form method="POST"  onsubmit="mail() ;reset() ; return false"   >
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input type="text" name="name" id="name" required />
 								</div>
-								<div class="field half">
+								<div class="field half" >
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="text" name="email" id="email" required />
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<textarea name="message" id="message" required rows="5"></textarea>
 								</div>
 							</div>
 							<ul class="actions">
@@ -244,7 +249,29 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<!-- <script src="/assets/js/folio.js"></script> -->
+	<!-- <script src=" https://smtpjs.com/v3/smtp.js"></script> -->
+	<!-- <script>
+		let mail = () => {
+				Email.send({
+					Host: "smtp.yahoo.com",
+					Username: "Tgodmuna@yahoo.com",
+					Password: 08137808640,
+					To: "Agumunachi2@gmail.com",
+					From: document.getElementById("email").value,
+					Subject: "This is the subject",
+					Body:
+						"name:" +
+						document.getElementById("name").value +
+						"<br>" +
+						"email:" +
+						document.getElementById("email").value +
+						"<br>" +
+						"message:" +
+						document.getElementById("message").innerHTML,
+				}).then((message) => alert("message sent successfully"));
+			}; -->
 
+	</script>
 </body>
 
 </html>
