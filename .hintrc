@@ -5,6 +5,7 @@
   "hints": {
     "meta-viewport": "off",
     "compat-api/css": "off",
-    "axe/structure": "off"
+    "axe/structure": "off",
+    "axe/forms": "off"
   }
 }
