@@ -2717,9 +2717,13 @@ input[type="radio"]+label:before {
 .image.main img {
 	width: 100%;
 }
-
+ .project-link{display:flex;
+ margin:1rem}
 /* List */
-
+#lID li{margin: 1rem;}
+#lID li::first-letter{
+	font-size: 3rem;
+}
 ol {
 	list-style: decimal;
 	margin: 0 0 2em 0;
