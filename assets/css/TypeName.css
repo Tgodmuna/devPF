@@ -1,0 +1,28 @@
+.name {
+    display: flex;
+    gap: 0.4rem;
+
+}
+
+.cursor {
+    border: 1px solid;
+    animation-name: blink-caret;
+    animation-duration: 0.55s;
+    animation-timing-function: steps(1, end);
+    animation-iteration-count: infinite;
+    height: 4rem;
+    padding: 10px 0px 10px 0px;
+    
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #751414;
+    }
+}
